@@ -15,8 +15,12 @@
 */
 
 //Code here
+let me = {
+  name: `Spence Johnson`,
+  age: 19
+};
 
-
+alert(me.name);
 
 ////////// PROBLEM 2 //////////
 
@@ -26,7 +30,14 @@
 */
 
 //Code here
-
+let favoriteThings = {
+  band: `Taylor Swift`,
+  food: `Steak`,
+  person: `Taylor Swift`,
+  book: `Elon Musk's Biography`,
+  movie: `How To Train Your Dragon`,
+  holiday: `the one by Green Day`,
+}
 
 
 /*
@@ -35,7 +46,8 @@
 
 //Code here
 
-
+favoriteThings.car = `Tesla Model S P100D`;
+favoriteThings.brand = `AMD`;
 
 /*
   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
@@ -43,7 +55,8 @@
 
 //Code here
 
-
+favoriteThings.food = `Chicken Nuggets`;
+favoriteThings.book = `Harry Potter`;
 
 ////////// PROBLEM 3 //////////
 
@@ -57,7 +70,11 @@
 
 //Code here
 
+let backPack = {};
 
+let item = `firstPocket`;
+backPack[item] = `chapstick`;
+backPack.color = `Navy`;
 
 /*
   After you do the above, alert your entire backPack object.
@@ -65,7 +82,7 @@
 
 //Code here
 
-
+alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -75,7 +92,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
-
+console.log(backPack);
 
 ////////// PROBLEM 4 //////////
 
@@ -98,7 +115,8 @@ var user2 = {
 
 //Code Here
 
-
+user2.name = `Tyler S. McGinnis`;
+user2.email = `tyler.mcginnis@devmounta.in`;
 
 
 
@@ -120,7 +138,7 @@ var user2 = {
 */
 
 //Code Here
-
+let methodCollection = {};
 
 
 /*
@@ -129,7 +147,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello = function(){alert(`hello`)};
+methodCollection.logHello = function(){console.log(`hello`)};
 
 
 /*
@@ -138,7 +157,8 @@ var user2 = {
 
 //Code Here
 
-
+methodCollection.alertHello();
+methodCollection.log();
 
 ////////// PROBLEM 6 //////////
 
@@ -148,8 +168,14 @@ var user2 = {
 */
 
 //Code Here
-
-
+function makePerson(str,num1,num2){
+  let newObject = {
+    name: str,
+    birthday: num1,
+    ssn: num2
+  };
+  return newObject;
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -159,5 +185,12 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard(num1,num2,num3){
+  let newCard = {
+    cardNumber: num1,
+    expirationDate: num2,
+    securityCode: num3
+  };
+  return newCard;
+}
 
